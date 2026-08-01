@@ -21,14 +21,10 @@ builds** — this is a Mozilla security rule, not something the extension can op
 Pick one:
 
 - **Try it now (any Firefox), removed on restart:** go to `about:debugging#/runtime/this-firefox`
-  - **Load Temporary Add-on** - select `roblox-account-switcher.xpi`.
+  - **Load Temporary Add-on** - select `roblox-account-manager.xpi`.
 - **Permanent, no signing:** use **Firefox Developer Edition, Nightly, or ESR**. In
   `about:config` set `xpinstall.signatures.required` to `false`, then open `about:addons`
   - gear icon - **Install Add-on From File** - pick the `.xpi`.
-- **Permanent on normal Firefox:** the `.xpi` must be **signed by Mozilla** (free).
-  Create an account at [addons.mozilla.org](https://addons.mozilla.org/developers/), submit
-  this build as an **unlisted** add-on (or run `web-ext sign` with your API keys), and
-  install the signed `.xpi` it returns. That signed file installs on any Firefox.
 
 ## How to use
 
