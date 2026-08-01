@@ -1,4 +1,4 @@
-# Roblox Account Switcher
+# Roblox Account Manager
 
 A Chrome/Edge extension (Manifest V3) to save unlimited Roblox accounts and switch
 between them in one click. It works by saving and swapping your `.ROBLOSECURITY`
