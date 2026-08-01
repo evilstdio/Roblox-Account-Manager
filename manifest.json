@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Roblox Account Switcher",
+  "version": "1.0.0",
+  "description": "Save unlimited Roblox accounts and switch between them with one click.",
+  "permissions": ["cookies", "storage"],
+  "host_permissions": [
+    "https://*.roblox.com/",
+    "https://roblox.com/"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Roblox Account Switcher",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
