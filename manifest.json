@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Roblox Account Switcher",
+  "name": "Roblox Account Manager",
   "version": "1.0.0",
   "description": "Save unlimited Roblox accounts and switch between them with one click.",
   "permissions": ["cookies", "storage"],
