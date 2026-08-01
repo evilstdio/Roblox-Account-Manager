@@ -8,13 +8,12 @@ session cookie — the same thing that keeps you logged in.
 
 1. Open `chrome://extensions` (or `edge://extensions`).
 2. Turn on **Developer mode** (top-right).
-3. Click **Load unpacked** and select this `roblox-ext` folder.
+3. Click **Load unpacked** and select this `roblox-account-manager` folder.
 4. Pin the red **R** icon from the puzzle-piece menu so it's always visible.
 
 ## Install on Firefox (.xpi)
 
-The packaged file is **`roblox-account-switcher.xpi`** (rebuild it any time with
-`build-xpi.ps1`). It uses the `manifest.firefox.json` (Manifest V2) config.
+The packaged file is **`roblox-account-switcher.xpi`**
 
 **Firefox blocks *permanent* install of unsigned add-ons on the normal Release/Beta
 builds** — this is a Mozilla security rule, not something the extension can opt out of.
