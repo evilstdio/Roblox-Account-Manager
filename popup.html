@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="logo">R</span>
+      <div>
+        <h1>Account Switcher</h1>
+        <p class="sub" id="count">No accounts saved</p>
+      </div>
+    </div>
+    <button id="saveCurrent" class="btn btn-primary" title="Save the account you're currently logged into">
+      + Save current
+    </button>
+  </header>
+
+  <div id="status" class="status" hidden></div>
+
+  <main>
+    <ul id="list" class="account-list"></ul>
+
+    <div id="empty" class="empty" hidden>
+      <p>No accounts yet.</p>
+      <p class="muted">Log into Roblox in a tab, then click <b>“+ Save current”</b> or paste a cookie below.</p>
+    </div>
+  </main>
+
+  <details class="adv">
+    <summary>
+      <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+        aria-hidden="true">
+        <polyline points="9 6 15 12 9 18" />
+      </svg>
+      <span>Add account manually (paste cookie)</span>
+    </summary>
+    <div class="adv-body">
+      <label for="manualName">Label</label>
+      <input id="manualName" type="text" placeholder="e.g. Alt account" autocomplete="off" />
+      <label for="manualCookie">.ROBLOSECURITY value</label>
+      <textarea id="manualCookie" rows="3" placeholder="_|WARNING:-DO-NOT-SHARE-THIS...|_..." autocomplete="off"></textarea>
+      <button id="addManual" class="btn btn-secondary">Add account</button>
+    </div>
+  </details>
+
+  <footer class="foot">
+    <button id="exportBtn" class="linkbtn">Export</button>
+    <span class="dot">·</span>
+    <button id="importBtn" class="linkbtn">Import</button>
+    <input id="importFile" type="file" accept="application/json" hidden />
+    <span class="spacer"></span>
+    <button id="logoutBtn" class="linkbtn danger">Log out current</button>
+  </footer>
+
+  <p class="warn">
+    Cookies are full session tokens stored locally on this device. Anyone with them can access your account. never share your export file.
+  </p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
