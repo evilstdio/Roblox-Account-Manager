@@ -13,7 +13,7 @@ session cookie — the same thing that keeps you logged in.
 
 ## Install on Firefox (.xpi)
 
-The packaged file is **`roblox-account-switcher.xpi`**
+The packaged file is **`roblox-account-manager.xpi`**
 
 **Firefox blocks *permanent* install of unsigned add-ons on the normal Release/Beta
 builds** — this is a Mozilla security rule, not something the extension can opt out of.
